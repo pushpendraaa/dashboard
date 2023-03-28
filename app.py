@@ -50,36 +50,36 @@ elif selected == "EDA":
     options = ['Hathaikheda Dam', 'Sarangpani Lake', 'Upper Lake', 'Lendiya Lake']
   )
   if chart_select == 'Hathaikheda Dam':
-      df = pd.read_csv('finalHK.csv')
-      st.subheader('Hathaikheda Dam')
-      coord = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
-        columns=['lat', 'lon'])      
-      st.map(coord)
+    df = pd.read_csv('finalHK.csv')
+    st.subheader('Hathaikheda Dam')
+    coord = pd.DataFrame(
+      np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
+      columns=['lat', 'lon'])      
+    st.map(coord)
       
   elif chart_select == 'Sarangpani Lake' :
-     df = pd.read_csv('final-new.csv')
-     st.subheader('Sarangpani Lake')
-     coord = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
-        columns=['lat', 'lon'])      
-      st.map(coord)
+    df = pd.read_csv('final-new.csv')
+    st.subheader('Sarangpani Lake')
+    coord = pd.DataFrame(
+       np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
+       columns=['lat', 'lon'])      
+    st.map(coord)
     
   elif chart_select == 'Upper Lake' :
-     df = pd.read_csv('finalUPL.csv')
-     st.subheader('Upper Lake')
-     coord = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
-        columns=['lat', 'lon'])      
-      st.map(coord)
+    df = pd.read_csv('finalUPL.csv')
+    st.subheader('Upper Lake')
+    coord = pd.DataFrame(
+       np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
+       columns=['lat', 'lon'])      
+    st.map(coord)
     
   elif chart_select == ('Lendiya Lake'):
-     df = pd.read_csv('lendiya.csv')
-     st.subheader('Lendiya Lake')
-     coord = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
-        columns=['lat', 'lon'])      
-      st.map(coord)
+    df = pd.read_csv('lendiya.csv')
+    st.subheader('Lendiya Lake')
+    coord = pd.DataFrame(
+       np.random.randn(1000, 2) / [50, 50] +[23.248495831047396, 77.34005483732471],
+       columns=['lat', 'lon'])      
+    st.map(coord)
 
 
    
