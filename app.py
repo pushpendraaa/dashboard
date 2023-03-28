@@ -40,7 +40,7 @@ if selected == "Home":
 
  
 elif selected == "EDA":
-  st.title('Exploratory Data Analysis')
+  st.markdown("""<h style ="font-size: 30px; font-weight: 600px"> Exploratory Data Analysis </h>""", unsafe_allow_html = True)
  
   st.sidebar.subheader("Visualisation Settings")
 
