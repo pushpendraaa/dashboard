@@ -47,17 +47,20 @@ elif selected == "EDA":
 
   chart_select = st.sidebar.selectbox(
     label = "Select the Lake",
-    options = ['Hathaikheda dam', 'Sarangpani lake', 'Upper lake']
+    options = ['Hathaikheda Dam', 'Sarangpani Lake', 'Upper Lake', 'Lendiya Lake]
   )
-  if chart_select == 'Hathaikheda dam':
+  if chart_select == 'Hathaikheda Dam':
       df = pd.read_csv('finalHK.csv')
-      st.subheader('Hathaikheda dam')
-  elif chart_select == 'Sarangpani lake' :
+      st.subheader('Hathaikheda Dam')
+  elif chart_select == 'Sarangpani Lake' :
      df = pd.read_csv('final-new.csv')
-     st.subheader('Sarangpani lake')
-  elif chart_select == 'Upper lake' :
+     st.subheader('Sarangpani Lake')
+  elif chart_select == 'Upper Lake' :
      df = pd.read_csv('finalUPL.csv')
      st.subheader('Upper Lake')
+  elif chart_select == ('Lendiya Lake'):
+     df = pd.read_csv('lendiya.csv')
+     st.subheader('Lendiya Lake')
 
 
    
