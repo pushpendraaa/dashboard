@@ -62,16 +62,16 @@ elif selected == "EDA":
         df = pd.read_csv('Lendiya.csv')
         st.subheader('Lendiya Lake')
 
-show_data = st.sidebar.checkbox("Show dataset")
+    show_data = st.sidebar.checkbox("Show dataset")
 
-if show_data:
-    st.write(df)
+    if show_data:
+        st.write(df)
 
-global numeric_columns
-try:
-    numeric_columns = list(df.select_dtypes(['float', 'int']).columns)
-except Exception as e:
-    print(e)
+    global numeric_columns
+    try:
+        numeric_columns = list(df.select_dtypes(['float', 'int']).columns)
+    except Exception as e:
+        print(e)
 
 chart_select = st.sidebar.selectbox(
     label="Select the Chart Type",
