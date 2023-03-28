@@ -17,7 +17,7 @@ with st.sidebar:
   selected = option_menu.option_menu(menu_title="Main Menu", options=["Home", "EDA"])
 
 if selected == "Home":
-  st.markdown("""<div style="line-height: 1.4; letter-spacing: 0.3px"> Monitoring the Water Quality in Bhopal Region using Satellite Imagery and GIS Techniques </div>""",
+  st.markdown("""<div style="line-height: 1.4; letter-spacing: 0.3px; font-weight: 400"> Monitoring the Water Quality in Bhopal Region using Satellite Imagery and GIS Techniques </div>""",
                 unsafe_allow_html=True)
   
   st.markdown('\n')
@@ -40,7 +40,7 @@ if selected == "Home":
 
  
 elif selected == "EDA":
-  st.markdown("""<h style ="font-size: 30px; font-weight: 600px"> Exploratory Data Analysis </h>""", unsafe_allow_html = True)
+  st.markdown("""<h style ="font-size: 30px; font-weight: 400"> Exploratory Data Analysis </h>""", unsafe_allow_html = True)
  
   st.sidebar.subheader("Visualisation Settings")
 
