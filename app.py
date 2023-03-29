@@ -112,8 +112,8 @@ elif selected == "EDA":
     try:
         x_values = st.sidebar.selectbox('X axis', options = numeric_columns)
         y_values = st.sidebar.selectbox('Y axis', options = numeric_columns)
-        plot = px.scatter(data_frame = df, x = x_values, y = y_values)
-        st.plotly_chart(plot)
+        plot = px.scatter(data_frame = df, x = x_values, y = y_values, color = "numeric_columns")
+        st.plotly_chart(plot, theme = None)
     except Exception as e:
         print(e)
 
